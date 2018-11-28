@@ -3,7 +3,7 @@ import cv2
 
 video_capture = cv2.VideoCapture(0)
 
-my_image = face_recognition.load_image_file("nish.jpg")
+my_image = face_recognition.load_image_file("javin.jpg")
 my_face_encoding = face_recognition.face_encodings(my_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
@@ -13,7 +13,7 @@ sir_face_encoding = face_recognition.face_encodings(sir_image)[0]
 sir_image2 = face_recognition.load_image_file("payanshi.jpg")
 sir_face_encoding2 = face_recognition.face_encodings(sir_image2)[0]
 
-sir_image3 = face_recognition.load_image_file("javin.jpg")
+sir_image3 = face_recognition.load_image_file("nish.jpg")
 sir_face_encoding3 = face_recognition.face_encodings(sir_image3)[0]
 
 # Create arrays of known face encodings and their names
@@ -24,10 +24,10 @@ known_face_encodings = [
     sir_face_encoding3
 ]
 known_face_names = [
-    "Nishchay",
+    "Javin",
     "Tanya",
     "Payanshi",
-    "Javin"
+    "Nishchay"
 ]
 
 # Initialize some variables
